@@ -43,7 +43,7 @@ f.close()
 
 
 triple_c=[]
-f = open("bitcoin_alpha/bitcoin_alpha_tri_search_pool_st.txt","r")
+f = open("bitcoin_alpha/seed695/bitcoin_alpha_tri_search_pool_st.txt","r")
 for l in f:
     ls = l.strip().split(",")
     #source, target, weight
