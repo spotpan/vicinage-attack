@@ -332,7 +332,7 @@ to_add=to_add.tolist()
 add_pool+=to_add
 
 DEFENDER={}
-Const=20
+Const=args.K_edges/10
 Graph_clean=nx.DiGraph()
 triple=model.tri.tolist()
 for tup in triple:
@@ -378,7 +378,7 @@ for t in range(10):
     print("For Budget %d, the sum of goodness is %f" % (Const, goodness_evaluation))
     print("--------------------")
     DEFENDER[t+1]=goodness_evaluation
-    Const+=20
+    Const+=args.K_edges/10
 
 print('TRAIN:',RECORD)
 print('TEST:',DEFENDER)
