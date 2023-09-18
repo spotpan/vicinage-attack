@@ -55,9 +55,7 @@ triple = np.array(triple)
 triple_c = np.array(triple_c)
 sample_nodes = np.random.choice(G.nodes(), 100, replace=False)
 fixed_target_nodes = sample_nodes[:50]
-#fixed_attack_nodes = sample_nodes[50:100]
 fixed_target_nodes = np.array(fixed_target_nodes)
-#fixed_attack_nodes = np.array(fixed_attack_nodes)
 n_nos=len(G.nodes())
 print('n_nos',n_nos)
 
