@@ -274,7 +274,7 @@ RECORD={}
 RECORD[0]=model.GOOD_SUM(goodness).item()
 
 add_pool=[]
-del_pool=[]
+
 for t in range(args.oitr):
 
     for i in range(args.iitr1):
