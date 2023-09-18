@@ -294,9 +294,6 @@ for t in range(args.oitr):
         index1=torch.LongTensor(index[:,0].tolist())
         index2=torch.LongTensor(index[:,1].tolist())
         indices=(index1,index2)
-        current_budgets=torch.abs(B[indices]-0.5).mean().item()*len(index)
-        if current_budgets >= args.K_edges:
-            continue
     
     B=model.maniplt_B()
     for j in range(args.iitr2):
